@@ -26,4 +26,9 @@ i = 0
 for feat in dct.keys():
     print(f"the length of feature {feat} is {len(js[feat])}")
     i = i + len(js[feat])
-print(i)
+
+
+# chroma 代表的是 12 個半音:C,C#,D..., B在每隔bin中的能量大小
+print(js['chroma_stft'][0]) # 長度共10186~=整首歌長236.50175s / (hop_length512/sr22050)
+print(len(js['chroma_stft'][0]))
+#print(len(js['chroma_cqt'][0]))
