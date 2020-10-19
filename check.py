@@ -16,3 +16,4 @@ with open('/Users/user/Desktop/chords_recogn/CE200_sample/CE200_sample/14/featur
 print(len(js['poly_features'][0]))
 
 # chords 跟 feature 長度不一樣...
+print('123')
