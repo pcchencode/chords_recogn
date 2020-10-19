@@ -16,5 +16,12 @@ with open('/Users/user/Desktop/chords_recogn/CE200_sample/CE200_sample/14/featur
 print(len(js['poly_features'][0]))
 
 # chords 跟 feature 長度不一樣...
+
+
+
 dct = dict(js)
-print(dct.keys())
+print(dct.keys()) # 印出所有特徵數,共12個
+
+for feat in dct.keys():
+	print(f"the length of feature {feat} is {len(js[feat])}")
+    
