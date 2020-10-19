@@ -22,6 +22,8 @@ print(len(js['poly_features'][0]))
 dct = dict(js)
 print(dct.keys()) # 印出所有特徵數,共12個
 
+i = 0
 for feat in dct.keys():
-	print(f"the length of feature {feat} is {len(js[feat])}")
-    
+    print(f"the length of feature {feat} is {len(js[feat])}")
+    i = i + len(js[feat])
+print(i)
